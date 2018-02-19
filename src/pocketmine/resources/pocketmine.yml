@@ -3,7 +3,7 @@
 # Some of these settings are safe, others can break your server if modified incorrectly
 
 settings:
- shutdown-message: "Server closed"
+ shutdown-message: "Server has been closed"
  #Allow listing plugins via Query
  query-plugins: true
  #Show a console message when a plugin uses deprecated API methods

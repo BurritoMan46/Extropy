@@ -32,7 +32,7 @@ class BanIpCommand extends VanillaCommand{
 		parent::__construct(
 			$name,
 			"Prevents the specified IP address from using this server",
-			"/ban-ip <address|player> [reason...]"
+			"§b/ban-ip <address|player> §c[reason...]"
 		);
 		$this->setPermission("pocketmine.command.ban.ip");
 	}
@@ -71,13 +71,13 @@ class BanIpCommand extends VanillaCommand{
 
 		foreach($sender->getServer()->getOnlinePlayers() as $player){
 			if($player->getAddress() === $ip){
-				$player->kick("You have been IP banned.");
+				$player->kick("§cYou have been IP §4banned.");
 			}
 		}
 
 		$sender->getServer()->blockAddress($ip, -1);
 
-		Command::broadcastCommandMessage($sender, "Banned IP Address " . $ip);
+		Command::broadcastCommandMessage($sender, "§4Banned IP Address " . $ip);
 	}
 
 }

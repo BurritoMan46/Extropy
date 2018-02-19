@@ -1,0 +1,5 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/BurritoMan46/Extropy
+branches:
+- master
+projects: []
+...
